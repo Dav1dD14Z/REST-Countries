@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/flag-solid-full.svg" type="image/x-icon">
+    <title>Countries API</title>
+</head>
+<body>
+    <header>
+        <div class="header__container--title">
+            <h1>Where in the world?</h1>
+        </div>
+        <div class="header__container--darkMode">
+            <ion-icon name="moon-outline"></ion-icon>
+            <button onclick="darkMode()">Dark Mode</button>
+        </div>
+    </header>
+
+    <section class="searchBar">
+        <div class="searchBar__container--input">
+            <ion-icon name="search-outline"></ion-icon>
+            <input type="text" name="Countries" placeholder="Search for a country..." autofocus>
+        </div>
+        <div class="searchBar__container--filter">
+            <p>Filters</p>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

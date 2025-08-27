@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+}
+
+body{
+    background-color: hsl(0, 0%, 99%);
+    transition: 0.5s;
+    color: hsl(200, 15%, 8%);
+}
+
+body.dark-mode{
+    background-color: hsl(207, 26%, 17%);
+    transition: 0.5s;
+    color: hsl(0, 0%, 100%);
+}
+
+body.dark-mode header{
+    background-color: hsl(209, 23%, 22%);
+    transition: 0.5s;
+}
+
+header{
+    width: 100vw;
+    height: 9vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__container--title h3{
+    font-size: 1.3rem;
+}
+
+.header__container--darkMode{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    cursor: pointer;
+}
+
+.header__container--darkMode ion-icon{
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: inherit;
+}   
+
+.header__container--darkMode button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.1rem;
+    font-weight: 300;
+    transition: 0.3s;   
+    cursor: pointer;
+    color: inherit;
+}
+
+.header__container--darkMode button:hover {
+    text-decoration: underline;
+    transition: 0.3s
+}
+
+.searchBar{
+    margin-top: 1.75rem;
+    width: 100vw;
+    height: 9vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.searchBar__container--input {
+    height: 9vh;
+    display: flex;
+    align-items: center;
+}
+
+.searchBar__container--input ion-icon{
+    position: absolute;
+    font-size: 1.2rem;
+    color: hsl(207, 26%, 17%);
+    padding-left: 1.3rem;
+}
+
+body.dark-mode .searchBar__container--input ion-icon{
+    color: hsl(0, 100%, 100%);
+}
+
+body.dark-mode .searchBar__container--input input {
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 100%, 100%);
+}
+
+.searchBar__container--input input {
+    outline: none;
+    border: none;
+    width: 450px;
+    height: 7vh;
+    border-radius: 0.3rem;
+    padding-left: 12%;
+    font-size: 1rem;
+}
+
+body.dark-mode .searchBar__container--input input::placeholder {
+    color: hsl(0, 100%, 100%);
+}
+
+.searchBar__container--filter {
+    height: 9vh;
+    width: 300px;
+}
+
