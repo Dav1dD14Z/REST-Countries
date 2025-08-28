@@ -28,9 +28,11 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
-.header__container--title h3{
+.header__container--title h1{
     font-size: 1.3rem;
 }
 
@@ -63,19 +65,22 @@ header{
 }
 
 .searchBar{
-    margin-top: 1.75rem;
-    width: 100vw;
-    height: 9vh;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    align-items: self-start;
     flex-wrap: wrap;
+    width: 100vw;
+    height: 100%;
+    margin-top: 1.75rem;
+
 }
 
 .searchBar__container--input {
     height: 9vh;
+    width: 80%;
     display: flex;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 .searchBar__container--input ion-icon{
@@ -97,8 +102,8 @@ body.dark-mode .searchBar__container--input input {
 .searchBar__container--input input {
     outline: none;
     border: none;
-    width: 450px;
-    height: 7vh;
+    width: 100%;
+    height: 4rem;
     border-radius: 0.3rem;
     padding-left: 12%;
     font-size: 1rem;
@@ -109,7 +114,35 @@ body.dark-mode .searchBar__container--input input::placeholder {
 }
 
 .searchBar__container--filter {
-    height: 9vh;
-    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+    border-radius: 0.3rem;
 }
+
+.searchBar__container--filter select {
+    text-align: center;
+    background-color: transparent;
+    color: hsl(207, 26%, 17%);
+    width: 40rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+body.dark-mode .searchBar__container--filter {
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 100%, 100%);
+}
+
+body.dark-mode .searchBar__container--filter select {
+    color: hsl(0, 0%, 100%);
+}
+
+.searchBar__container--filter select option{
+    appearance: none;
+    width: 80px;
+}
+
 

@@ -14,7 +14,7 @@
         </div>
         <div class="header__container--darkMode">
             <ion-icon name="moon-outline"></ion-icon>
-            <button onclick="darkMode()">Dark Mode</button>
+            <button id="button">Dark Mode</button>
         </div>
     </header>
 
@@ -24,7 +24,14 @@
             <input type="text" name="Countries" placeholder="Search for a country..." autofocus>
         </div>
         <div class="searchBar__container--filter">
-            <p>Filters</p>
+            <select name="Filter by Region" id="">
+                <option value="Africa" selected disabled>Filter by Region</option>
+                <option value="Africa">Africa</option>
+                <option value="America">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
         </div>
     </section>
 
